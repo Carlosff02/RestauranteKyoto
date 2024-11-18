@@ -21,7 +21,7 @@ let descuento = 0;
 let loggin = false;
   
   function cargarUsuario(){
-console.log(window.location.pathname)
+
   
   if(loggin==true){
     document.getElementById('sesion').style.display="none"
@@ -45,7 +45,7 @@ function cargarLogging(){
       nombreUsuario = JSON.parse(usuarioGuardado);
        // Actualiza la interfaz con los datos cargados
       
-       if (window.location.pathname === "/index.html"){
+       if (window.location.pathname === "/RestauranteKyoto/"){
         cargarUsuario()
        }
        else{
@@ -64,7 +64,7 @@ function cargarPedido() {
       descuento = JSON.parse(descuentoGuardado);
        // Actualiza la interfaz con los datos cargados
        
-       if (window.location.pathname === "/Pago/pago2.html"){
+       if (window.location.pathname === "/RestauranteKyoto/Pago/pago2.html"){
        cargarPedidos();}
        else{
         
@@ -499,7 +499,7 @@ function disminuirCantidad(valor){
   
 }
   
-  if (window.location.pathname === "/Pago/pago2.html" || window.location.pathname === "/Pago/pago1.html") {
+  if (window.location.pathname === "/RestauranteKyoto/Pago/pago2.html" || window.location.pathname === "/RestauranteKyoto/Pago/pago1.html") {
     // Ejecutar funciones específicas para esta página
     document.addEventListener('DOMContentLoaded', ()=>{
       cargarPedido();
