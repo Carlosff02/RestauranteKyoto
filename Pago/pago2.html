@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto: lista de pago</title>
+    <link rel="stylesheet" href="Estilos_pago2.css">
+</head>
+<body>
+    <!--encabezado--> 
+    <header> 
+        <img src="kioto2.jpg" width="12%" height="12%">
+        <nav align="center">
+            <a href="../index.html">Inicio</a>
+            <a href="../index.html#menu">Menu</a>
+            <a href="https://wa.link/k0n078">Contactanos</a>
+        </nav>
+        
+    </header><br>
+    <!--main-->
+    <div>
+        <table class="lista">
+            <thead>
+                <th><h3>items</h3></th>
+                <th><h3>Titulo</h3></th>
+                <th><h3>Precio</h3></th>
+                <th><h3>Cantidad</h3></th>
+                <th><h3>Total</h3></th>
+                <th><h3>Eliminar</h3></th>
+            </thead>
+            <tbody id="articulosCarrito">
+
+            </tbody>
+            
+        </table><br>
+    </div>
+    <!--seccion resumen-->
+    <div class="contenedor">
+        <div class="resumen">
+            <h2>Titulo pendiente</h2>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotal-pedido">s/0.00</td>
+                </tr>
+                <tr>
+                    <td>Delivery</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td><b>Total</b></td>
+                    <td><b id="total-pedido">s/0.00</b></td>
+                </tr>
+            </table>
+            <input type="submit" value="Checkout" onclick="cargarLogging()">
+        </div>
+        <div class="descuento">
+            <h4>Ingrese el codigo de descuento</h4>
+            <input id="codigo" type="text" name="codigo" placeholder="codigo">
+            <input type="submit" onclick="aplicarDescuento()" value="Ingresar">
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

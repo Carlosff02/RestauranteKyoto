@@ -1,0 +1,164 @@
+header {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buscador input {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 30px;
+}
+
+.formulario {
+    width: 60%;
+    margin-right: auto;
+}
+
+.formulario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.formulario form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulario input, .formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forma {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.resumen {
+    width: 300px;
+    height: 260px;
+    margin-left: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.resumen h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.resumen table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.resumen table td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.resumen tr:last-child td {
+    border-bottom: none;
+}
+
+.resumen b {
+    font-weight: bold;
+}
+
+.resumen table td:nth-child(2) {
+    text-align: right;
+}
+
+.resumen input {
+    background-color: #ff5e23;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .formulario, .resumen {
+        width: 100%;
+    }
+
+    .forma {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 14px;
+    }
+
+    .buscador input, .resumen input {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

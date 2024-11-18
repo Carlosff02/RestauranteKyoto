@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto Sushi Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ExploreMenu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="principal" id="principal">
+        <img class="uno" src="sushibar.webp" >
+        <p class="enlace dos"><a  href="#principal">Inicio</a></p>
+        <p class="enlace tres"><a href="#menu">Menu</a></p>
+        <p class="enlace cuatro"><a href="https://wa.link/k0n078">Contacta con Nosotros</a></p>
+        
+        <a onclick="cargarPedidos()"  href="./Pago/pago2.html" class="enlace seis"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+        <div class="sesion" id="sesion"><button id="sesion-button" class="sesion-button">Iniciar Sesion</button></div><p id="usuario-registrado"></p>
+
+        <div class="login">
+          <form class="login-form">
+              <div class="login-title">
+                  <h2>Login</h2>
+                  
+              </div>
+              <div class="login-inputs">
+                  <input type="email" placeholder="Ingresa tu email" required>
+                  <input type="password" placeholder="Contraseña" required>
+              </div>
+              <button>Ingresar</button>
+              <div class="login-condicion">
+                  <input type="checkbox" required>
+                  <p>Para continuar, acepta los terminos y condiciones</p>
+              </div>
+              <button class="btn-reg">Registrate</button>
+          </form>
+  
+          <img class="img-sushi" src="./Login/img/sushi.png" alt="">
+          
+      </div>
+
+      <div class="register">
+        <form class="register-form">
+            <div class="login-title">
+                <h2>Registrate</h2>
+
+            </div>
+            <div class="register-inputs">
+                <input class="register-nombre" type="text" placeholder="Ingresa tu nombre" required>
+                <input class="register-email" type="email" placeholder="Ingresa tu email" required>
+                <input class="register-pass" type="password" placeholder="Contraseña" required>
+            </div>
+            <button>Crear cuenta</button>
+            <div class="register-condicion">
+                <input class="register-check" type="checkbox" required>
+                <p>Para continuar, acepta los terminos y condiciones</p>
+            </div>
+      
+        </form>
+
+        <img class="img-sushi2" src="./Login/img/sushi.png" alt="">
+    </div>
+    </header>
+    <main class="image">
+        <h1 class="tituloImagen">Mejor restaurante <br>japonés en Lima</h1>
+        <button class="verMenu"><a href="#menu">Ver el Menú</a></button>
+    </main>
+    <footer class="subtitulo">
+        <h1>Explora nuestro menu</h1>
+        <p>Enamora tu paladar con la mejor y más auténtica comida japonesa
+            que encontrarás en Lima. Kyoto Sushi Bar une la cocina tradicional japonesa con
+            innovadores y modernos métodos gastronómicos para crear platos de sushi
+            y noodles así  como gyozas vegetales caseras.
+        </p>
+    </footer>
+    
+    <div class="carrito" id="carrito">
+      <h1>Mi pedido</h1>
+    <div class="verPedido" id="verPedido">
+      
+    
+      
+    </div>
+    <a class="enlaceCarrito" href="./Pago/pago2.html"><button  class="buttonCarrito">Continuar</button></a>
+  </div>
+    
+
+    <section class="menu contenedor " id="menu">
+      <section class="">  
+      <div class=" secondary">
+          <div class="opcionMenu todos ">
+            <img src="./Menu/entradas.png" alt="Todos">
+            <p>Todo</p>
+          </div>
+          <div class="makis opcionMenu">
+            <img src="./Menu/makis.png" alt="Makis">
+            <p>Makis</p>
+          </div>
+          <div class="ramen opcionMenu">
+            <img src="./Menu/ramen.png" alt="Ramen">
+            <p>Ramen</p>
+          </div>
+          <div class="postres opcionMenu">
+            <img src="./Menu/postres.jpg" alt="Postres">
+            <p>Postres</p>
+          </div>
+          <div class="fondos opcionMenu">
+            <img src="./Menu/fondos.png" alt="Fondos">
+            <p>Fondos</p>
+          </div> 
+        </div></section>
+
+        <h2 class="h2-menu">Platillos Populares</h2>
+
+        <div class="platillos" id="platillos">
+
+          </div>
+
+        </div>
+    </section>
+
+    <hr class="hr"/>
+
+    <div class="foo">
+      <div class="foo-kyoto">
+        <h2>Kyoto.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Iste, labore. Inventore ex nam debitis, mollitia officia 
+          saepe, tenetur consectetur illum, error voluptatem earum est.</p>
+          <div class="foo-img">
+            <img src="./img-footer/facebook.png" alt="">
+            <img src="./img-footer/instagram.jpg" alt="">
+            <img src="./img-footer/twitter.png" alt="">
+          </div>
+      </div>
+
+      <div>
+        <h2>COMPANY</h2>
+        <p>Nosotros</p>
+        <p>Terminos y Condiciones</p>
+        <p>Politica de Privacidad</p>
+      </div>
+
+      <div>
+        <h2>Contactanos</h2>
+        <p>KyotoRest@gmail.com</p>
+      </div>
+      
+    </div>
+
+    <script  src="./script.js">
+    </script>
+</body>
+</html>
