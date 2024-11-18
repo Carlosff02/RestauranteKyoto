@@ -128,7 +128,7 @@ const usuarios = [
 if (window.location.pathname === "/index.html") {
   let contenido = document.getElementById('platillos');
        let ayuda = ''
-      for(let i = 0; i < 4; i++){
+      for(let i = 0; i < platos.nombre.length; i++){
         ayuda += `<div id="platillo" class="platillo" data-platillo="${platos.categoria[i]}">
                  <img src="${platos.img[i]}">
                  <div class="textoMenu">
@@ -141,6 +141,7 @@ if (window.location.pathname === "/index.html") {
                 
         
       }
+  console.log(ayuda)
       
       if(ayuda!=''&& ayuda!=null){
         contenido.innerHTML = ayuda
