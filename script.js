@@ -125,7 +125,7 @@ const usuarios = [
 // LOGIN------------------>
 
 
-if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+if (window.location.pathname === "/index.html" || window.location.pathname === "/RestauranteKyoto/") {
   let contenido = document.getElementById('platillos');
        let ayuda = ''
       for(let i = 0; i < platos.nombre.length; i++){
