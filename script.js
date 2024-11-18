@@ -17,9 +17,10 @@ const btnTodos = document.querySelector(".todos")
 const contenedorPlatillos = document.querySelector(".platillos")
 const codigosPromo = ['A1234', 'B3456']
 let nombreUsuario = ''
+
 let descuento = 0;
 let loggin = false;
-  
+
   function cargarUsuario(){
 
   
@@ -45,7 +46,7 @@ function cargarLogging(){
       nombreUsuario = JSON.parse(usuarioGuardado);
        // Actualiza la interfaz con los datos cargados
       
-       if (window.location.pathname === "/RestauranteKyoto/"){
+       if (window.location.pathname.endsWith('/index.html') || window.location.pathname.endsWith('/') ){
         cargarUsuario()
        }
        else{
@@ -64,7 +65,7 @@ function cargarPedido() {
       descuento = JSON.parse(descuentoGuardado);
        // Actualiza la interfaz con los datos cargados
        
-       if (window.location.pathname === "/RestauranteKyoto/Pago/pago2.html"){
+       if (window.location.pathname.endsWith("/Pago/pago2.html")){
        cargarPedidos();}
        else{
         
@@ -125,7 +126,7 @@ const usuarios = [
 // LOGIN------------------>
 
 
-if (window.location.pathname === "/index.html" || window.location.pathname === "/RestauranteKyoto/") {
+if (window.location.pathname.endsWith('/index.html') || window.location.pathname.endsWith('/') ) {
   let contenido = document.getElementById('platillos');
        let ayuda = ''
       for(let i = 0; i < platos.nombre.length; i++){
@@ -499,7 +500,7 @@ function disminuirCantidad(valor){
   
 }
   
-  if (window.location.pathname === "/RestauranteKyoto/Pago/pago2.html" || window.location.pathname === "/RestauranteKyoto/Pago/pago1.html") {
+  if ( window.location.pathname.endsWith("/Pago/pago2.html")) {
     // Ejecutar funciones específicas para esta página
     document.addEventListener('DOMContentLoaded', ()=>{
       cargarPedido();
