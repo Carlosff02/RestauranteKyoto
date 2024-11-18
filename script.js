@@ -21,7 +21,7 @@ let descuento = 0;
 let loggin = false;
   
   function cargarUsuario(){
-
+console.log(window.location.pathname)
   
   if(loggin==true){
     document.getElementById('sesion').style.display="none"
