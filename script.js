@@ -57,7 +57,7 @@ function cargarLogging(){
 // Cargar los pedidos desde localStorage
 function cargarPedido() {
   const pedidosGuardados = sessionStorage.getItem('pedidos');
-  console.log(pedidosGuardados)
+  
   const descuentoGuardado = sessionStorage.getItem('descuento')
   if (pedidosGuardados) {
       pedidos = JSON.parse(pedidosGuardados);
@@ -67,7 +67,7 @@ function cargarPedido() {
        if (window.location.pathname === "/Pago/pago2.html"){
        cargarPedidos();}
        else{
-        console.log(descuento)
+        
         cargarTotal();
        }
     }
@@ -294,7 +294,7 @@ const mostrarPlatillo = (fondos, makis, postres, ramen, todos) =>{
     })
     btnMakis.addEventListener('click', () =>{
         limpiar(contenedorPlatillos)
-        console.log(fondos)
+        
         makis.forEach(maki=> contenedorPlatillos.appendChild(maki));
     })
     btnPostres.addEventListener('click', () =>{
@@ -480,7 +480,7 @@ function esEmailValido(email) {
     pedidos.img.splice(valor, 1);
     pedidos.precio.splice(valor, 1);
     pedidos.cantidad.splice(valor, 1);
-    console.log(pedidos)
+    
     guardarPedidos();
     cargarPedidos();
   }
